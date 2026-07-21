@@ -30,6 +30,8 @@ jobs:
         run: npm ci
       - name: Verify dependency signatures
         run: npm audit signatures
+      - name: Lint
+        run: npm run lint
       - name: Build
         run: npm run build
       - name: Audit for known vulnerabilities
