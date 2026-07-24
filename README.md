@@ -5,7 +5,8 @@ runner, or database — just the scaffolding and guardrails, ready to build on.
 
 ## What's included
 
-- Node 24+ — enforced via `.npmrc` (`engine-strict`), so an older Node version won't install.
+- An exact Node version (`.node-version`) — enforced via `.npmrc` (`engine-strict`), so
+  any other version won't install.
 - TypeScript, ESLint, and Prettier.
 - A CI workflow (`ci.yml`, using `actions/checkout` and `actions/setup-node`) that runs
   on every pull request, every push to `main`, and weekly: install, dependency signature
